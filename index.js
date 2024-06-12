@@ -155,7 +155,7 @@ app.get("/", (req, res) => {
 });
 
 
-const PORT = process.env.PORT || 10000;  // specify the port number
+const PORT = process.env.PORT || 8080;  // specify the port number
 const server = app.listen(process.env.PORT, (err) => {
     if (err) {
         console.log(err);

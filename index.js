@@ -6,6 +6,9 @@ const app = express();
 // start of my web socket implimentations
 const socket = require("socket.io");
 
+// deployment on the render base url is 
+const baseUrl="https://rksocial.onrender.com";
+
 
 //end of my web socket implimentations
 const userRoutes = require("./routes/userRoutes")
@@ -152,7 +155,7 @@ app.get("/", (req, res) => {
 });
 
 
-const PORT = process.env.PORT || 8080;  // specify the port number
+const PORT = process.env.PORT || 10000;  // specify the port number
 const server = app.listen(process.env.PORT, (err) => {
     if (err) {
         console.log(err);
